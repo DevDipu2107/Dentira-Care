@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Dancing+Script:wght@400..700&family=Grechen+Fuemen&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --default-font-family: "Inter", sans-serif;
+  --default-font-weight: 400;
+  --text-color: #ffffff;
+  --default-line-height: 1.5;
+  --default-font-size: 1rem;
+  --default-background-color: #fcfef6;
+}
+
+body {
+  background-color: var(--default-background-color);
+  font-family: var(--default-font-family);
+  font-size: var(--default-font-size);
+  font-weight: var(--default-font-weight);
+  line-height: var(--default-line-height);
+}
+
+.fluid-header-container {
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+  /* border-bottom: 5px gray; */
+  /* border: 1px solid red; */
+}
+
+.header-container {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.nav-left-logo-container {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.teeth-logo {
+  height: 1.5rem;
+}
+
+.dentria-text {
+  height: 1.1rem;
+}
+.line-logo {
+  height: 1.5rem;
+  margin-left: 6px;
+}
+.care-text {
+  height: 1.1rem;
+  margin-left: 6px;
+  background-color: black;
+}
+
+.nav-right-button-container {
+  /* border: 1px solid red; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* height: 46px; */
+  /* width: 96px; */
+}
+
+.btn-signin {
+  /* width: 100%;
+  height: 100%; */
+  padding: 0.8rem 1.5rem;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #00ad6f;
+  color: var(--text-color);
+  border: none;
+}
