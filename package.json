@@ -1,0 +1,21 @@
+{
+  "name": "new-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevDipu2107/Dentira-Care.git"
+  },
+  "author": "Dipendra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevDipu2107/Dentira-Care/issues"
+  },
+  "description": "",
+  "devDependencies": {
+    "vite": "^7.0.2"
+  }
+}

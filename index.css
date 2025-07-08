@@ -13,6 +13,8 @@
   --default-line-height: 1.5;
   --default-font-size: 1rem;
   --default-background-color: #fcfef6;
+  --default-green-color:#00ad6f;
+  --Neutral-800: #262626;
 }
 
 body {
@@ -21,6 +23,12 @@ body {
   font-size: var(--default-font-size);
   font-weight: var(--default-font-weight);
   line-height: var(--default-line-height);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid red; */
 }
 
 .fluid-header-container {
@@ -39,28 +47,15 @@ body {
   padding: 0.5rem;
 }
 
-.nav-left-logo-container {
-  /* border: 1px solid red; */
+.header-mobile-logo{
   display: flex;
   align-items: center;
-  gap: 0.3rem;
 }
 
-.teeth-logo {
-  height: 1.5rem;
-}
-
-.dentria-text {
-  height: 1.1rem;
-}
-.line-logo {
-  height: 1.5rem;
-  margin-left: 6px;
-}
-.care-text {
-  height: 1.1rem;
-  margin-left: 6px;
-  background-color: black;
+.nav-left-logo-container {
+  /* border: 1px solid red; */
+  display: none;
+  align-items: center;
 }
 
 .nav-right-button-container {
@@ -72,12 +67,161 @@ body {
 }
 
 .btn-signin {
-  /* width: 100%;
-  height: 100%; */
-  padding: 0.8rem 1.5rem;
-  font-size: 16px;
-  border-radius: 10px;
-  background-color: #00ad6f;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  background-color: var(--default-green-color);
   color: var(--text-color);
   border: none;
+}
+
+.header-botton-gray-line{
+  border: 0.5px solid gray;
+  opacity: 20%;
+}
+
+.fluid-main-container{
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.smart-healthcare-container{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.smart-left-container{
+  /* width: 10rem; */
+  /* border: 2px solid red; */
+  display: none;
+}
+
+.smart-center-container{
+  /* border: 2px solid red; */
+  width: 477px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.smarter-title-subtitle{
+
+}
+
+.smarter-healthcare-subtitle{
+  color: var(--default-green-color);
+  font-family: var(--default-font-family);
+  font-size: 1.25rem;
+  font-weight: var(--default-font-weight);
+  justify-content: center;
+  display: flex;
+}
+
+.smarter-healthcare-title{
+color: var(--Neutral-800);
+font-family: Roboto;
+font-size: 42px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.smart-healthcare-description{
+color: #666;
+font-size: 0.9rem;
+font-weight: 400;
+}
+
+.smart-text-input-container{
+  height: 65px;
+  width:100%;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding-right: 10px;
+}
+
+.text-input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 15px;
+  opacity: 60%;
+}
+
+.btn-prescription{
+  height: 50px;
+  width: 200px;
+  background-color: var(--default-green-color);
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+   cursor:pointer;
+}
+
+.scan-qr-container{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+   background-color: #262626;
+   cursor:pointer;
+  /* border: 2px solid red; */
+  }
+
+.scan-qr-container-inner{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ }
+
+.qr-img{
+  height: 30px;
+  width: 30px;
+  color: #ffffff;
+}
+
+.qr-title{
+font-size: 1rem;
+color: #ffffff;
+}
+
+.smart-right-container{
+  /* width: 10rem; */
+  /* border: 2px solid red; */
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+
+.nav-left-logo-container{
+  display: flex;
+}
+
+.header-mobile-logo{
+  display: none;
+}
+
+.btn-signin {  
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.smart-left-container{
+  display: block;
+}
+
+.smarter-healthcare-subtitle{
+ justify-content: start;
+}
+
+.smart-right-container{
+ display: block;
+}
 }

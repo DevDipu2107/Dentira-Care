@@ -1,39 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dentira Care Patient</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <header>
+        <!--Fluid Header container to make to responsice for all screen size-->
         <div class="fluid-header-container">
-        <div class="header-container">
-            <div class="nav-left-logo-container">
-                <img class="teeth-logo" src="./Dentria1/teeth.svg" alt="teeth-logo">
-                <img class="dentria-text" src="./Dentria1/dentria-text.svg" alt="Dentira">
-                <img class="line-logo" src="./Dentria1/line.svg" alt="Line">
-                <img class="care-text" src="./Dentria1/care.svg" alt="Text">
+            <!--Header Main container-->
+            <div class="header-container">
+                <!--Left contsiner-->
+                <div class="nav-left-logo-container">
+                    <img src="./Dentria1/window-header-logo-img.svg" alt="">
+                </div>
+                <div class="header-mobile-logo">
+                    <img src="./Dentria1/mobile-header-logo.svg" alt="">
+                </div>
+                <div class="nav-right-button-container">
+                    <button class="btn-signin" type="button">Sign In</button>
+                </div>
             </div>
-            <div class="nav-right-button-container">
-                <button class="btn-signin" type="button">Sign In</button>
-
-            </div>
-        </div>
         </div>
     </header>
-    <hr style="border: 0.5px solid gray;opacity: 20%;">
+    <hr class="header-botton-gray-line">
     <main>
-        <div class="smart-healthcare-container"></div>
-        <div class="why-dentira-care-container"></div>
-        <div class="consult-view-order-delivered-container"></div>
-        <div class="partners-container"></div>
-        <div class="FAQ-container"></div>
+        <div class="fluid-main-container">
+            <div class="smart-healthcare-container">
+                <div class="smart-left-container">
+                    <img src="./Dentria1/smart-left-img.svg" alt="doctor image">
+                </div>
+                <div class="smart-center-container">
+                    <div class="smarter-title-subtitle">
+                    <p class="smarter-healthcare-subtitle">Smarter Healthcare</p>
+                    <h1 class="smarter-healthcare-title">Personalized Prescriptions & Quality Supplement Plans</h1>
+                    </div>
+                    <p class="smart-healthcare-description">Get doctor-prescribed supplements and medicines, customized to your health needs, delivered right to your doorstep.</p>
+                    <div class="smart-text-input-container">
+                        <input class="text-input" type="text" placeholder="Enter Prescription ID">
+                        <button class="btn-prescription" type="button">View Prescription</button>
+                    </div>
+                  <div class="scan-qr-container">
+                    <div class="scan-qr-container-inner">
+                    <img class="qr-img" src="./Dentria1/qr_code_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                    <p class="qr-title">Scan QR for prescription</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="smart-right-container">
+                    <img src="./Dentria1/smart-right-img.svg" alt="">
+                </div>
+            </div>
+            <div class="why-dentira-care-container"></div>
+            <div class="consult-view-order-delivered-container"></div>
+            <div class="partners-container"></div>
+            <div class="FAQ-container"></div>
+        </div>
     </main>
     <footer>
         <div class="footer-container"></div>
         <script src="index.js"></script>
     </footer>
 </body>
+
 </html>
